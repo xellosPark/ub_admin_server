@@ -10,8 +10,26 @@ npm install --save @nestjs/typeorm typeorm mysql2
 PowerShell 창에서 다음 명령을 실행합니다.
 powershell
 -Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
 3.npm install --save @nestjs/typeorm typeorm mysql2
 4.npm install --save class-validator class-transformer
+
+5. uuid 모듈 사용하기  
+   유니크 값 사용시 사용 대부분 ID 아이디에 사용
+ - npm install uuid --sav
+
+6. 파이프 필요한 모듈
+   파이프를 이용해서 게시물을 생성할 때 유효성 체크
+- npm install class-validator class-transformer --save
+참조
+- https://github.com/typestack/class-validator#manual-validation
+
+8. TypeORM을 사용하기 위해서 설치해야하는 모듈
+@nestjs/typeorm
+ -Nest.js에서 TypeOrm을 사용하기 위해 연동
+npm install pg typeorm @nestjs/typeorm --save
+//passport-jwt는 JWT를 검증하고 해독
+npm install @nestjs/passport @nestjs/jwt passport-jwt
 
 
 리포지토리는 데이터 계층에 대한 추상화를 제공하므로 SQL 쿼리를 직접 처리하지 않고도 객체 지향 방식으로 데이터베이스와 상호 작용할 수 있습니다. 이 추상화는 다음과 같습니다.
